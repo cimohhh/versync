@@ -14,7 +14,7 @@ i made this project on gentoo linux, but it works on any linux distribution :)
 - **lightweight TUI** — built with Rust and Ratatui.
 - **cross distribution support** — designed for Linux without requiring a specific init system.
 - **no spotify API keys** — uses MPRIS through `playerctl`.
-
+ 
 ## requirements
 
 - Linux with a working D-Bus session
