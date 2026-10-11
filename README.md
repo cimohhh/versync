@@ -1,6 +1,6 @@
 # Versync
 
-Versync is a lightweight, minimalist spotify lyrics viewer for the terminal, built in Rust.
+Versync is a lightweight, minimalist spotify lyrics viewer for the terminal, built in Rust and made for Linux. 
 
 i made this project on gentoo linux, but it works on any linux distribution :)
 
