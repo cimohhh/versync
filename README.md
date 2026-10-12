@@ -6,18 +6,17 @@ i made this project on gentoo linux, but it works on any linux distribution :)
 
 ## features
 
-- **live synchronization** — lyrics follow spotify playback automatically.
-- **smooth transitions** — 600ms color transitions between lyric lines.
-- **minimalist design** — no unnecessary buttons, artwork, or visual clutter.
-- **context aware lyrics** — see previous, current, and upcoming lines.
-- **automatic track detection** — lyrics update when the song changes.
-- **lightweight TUI** — built with Rust and Ratatui.
-- **cross distribution support** — designed for Linux without requiring a specific init system.
+- **live synchronization** — lyrics follow spotify playback automatically
+- **smooth transitions** — 600ms color transitions between lyric lines
+- **context aware lyrics** — see previou/current/upcoming lines
+- **automatic track detection** — lyrics update when the song changes
+- **lightweight TUI** — built with Rust and Ratatui
+- **cross distribution support** — designed for Linux without requiring a specific init system
 - **no spotify API keys** — uses MPRIS through `playerctl`.
  
 ## requirements
 
-- Linux with a working D-Bus session
+- Linux with a working D Bus session
 - spotify with MPRIS support
 - `playerctl`
 - Rust and Cargo (to build from source)
