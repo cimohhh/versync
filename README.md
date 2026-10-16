@@ -1,13 +1,11 @@
 versync is a spotify lyrics viewer built in rust and made for linux. 
 i made this project on gentoo linux, but it works on any linux distribution :)
 
-FEATURES - lyrics follow spotify playback automatically, 600ms color transitions between lyric lines, see previous/current/upcoming lines, lyrics update when the song changes, lightweight TUI built with rust and ratatui, cross distribution support, designed for linux without requiring a specific init system, no spotify API keys, uses MPRIS through `playerctl`.
+FEATURES - lyrics follow spotify playback automatically, 600ms color transitions between lyric lines, see previous/current/upcoming lines, lyrics update when the song changes, lightweight TUI built with rust and ratatui, cross distribution support, designed for linux without requiring a specific init system, no spotify API keys, uses MPRIS through playerctl.
  
 REQUIREMENTS - versync requires linux with a working D Bus session, spotify with MPRIS support, playerctl, rust and cargo (to build from source), internet connection for retrieving lyrics, and a terminal with true color support is recommended.
 
-INSTALLATION - 
-
-clone the repository:
+INSTALLATION - clone the repository:
 
 ```bash
 git clone https://github.com/cimohhh/versync.git
@@ -39,11 +37,9 @@ versync automatically detects the currently playing track and retrieves synchron
 
 versync runs directly in your terminal. it does not require kitty or a specific desktop environment.
 
-HOW IT WORKS - versync communicates with spotify through the linux MPRIS interface using `playerctl`. it retrieves timestamped lyrics from [LRCLIB](https://lrclib.net/) and matches them to spotify's playback position. lyrics are rendered using ratatui, with cyan highlighting for the active line and smooth transitions between lines.
+HOW IT WORKS - versync communicates with spotify through the linux MPRIS interface using playerctl. it retrieves timestamped lyrics from [LRCLIB](https://lrclib.net/) and matches them to spotify's playback position. lyrics are rendered using ratatui, with cyan highlighting for the active line and smooth transitions between lines.
 
-COMPATIBILITY - versync is designed for linux distributions with spotify MPRIS support, including Gentoo, Arch Linux, Fedora, Ubuntu, and Debian.
-
-i made this project while using gentoo linux, but it should work on most distros.
+COMPATIBILITY - versync is designed for linux distributions with spotify MPRIS support, including gentoo, arch, fedora, ubuntu, and debian.
 
 ## license
 
