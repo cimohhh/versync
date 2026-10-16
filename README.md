@@ -41,6 +41,4 @@ HOW IT WORKS - versync communicates with spotify through the linux MPRIS interfa
 
 COMPATIBILITY - versync is designed for linux distributions with spotify MPRIS support, including gentoo, arch, fedora, ubuntu, and debian.
 
-## license
-
-versync is licensed under the [MIT License](LICENSE).
+LICENSE - versync is licensed under the [MIT License](LICENSE).
