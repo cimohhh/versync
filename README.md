@@ -1,15 +1,11 @@
 versync is a spotify lyrics viewer built in rust and made for linux. 
 i made this project on gentoo linux, but it works on any linux distribution :)
 
-## features
-
-lyrics follow spotify playback automatically, 600ms color transitions between lyric lines, see previous/current/upcoming lines, lyrics update when the song changes, lightweight TUI built with rust and ratatui, cross distribution support, designed for linux without requiring a specific init system, no spotify API keys, uses MPRIS through `playerctl`.
+FEATURES - lyrics follow spotify playback automatically, 600ms color transitions between lyric lines, see previous/current/upcoming lines, lyrics update when the song changes, lightweight TUI built with rust and ratatui, cross distribution support, designed for linux without requiring a specific init system, no spotify API keys, uses MPRIS through `playerctl`.
  
-## requirements
+REQUIREMENTS - versync requires linux with a working D Bus session, spotify with MPRIS support, playerctl, rust and cargo (to build from source), internet connection for retrieving lyrics, and a terminal with true color support is recommended.
 
-versync requires linux with a working D Bus session, spotify with MPRIS support, playerctl, rust and cargo (to build from source), internet connection for retrieving lyrics, and a terminal with true color support is recommended.
-
-## installation
+INSTALLATION - 
 
 clone the repository:
 
@@ -28,9 +24,7 @@ the installer compiles versync in release mode and installs it to `~/.local/bin/
 
 make sure `~/.local/bin` is included in your `PATH`.
 
-## usage
-
-start spotify and play a song, then run:
+USAGE - start spotify and play a song, then run:
 
 ```bash
 versync
@@ -45,13 +39,9 @@ versync automatically detects the currently playing track and retrieves synchron
 
 versync runs directly in your terminal. it does not require kitty or a specific desktop environment.
 
-## how it works
+HOW IT WORKS - versync communicates with spotify through the linux MPRIS interface using `playerctl`. it retrieves timestamped lyrics from [LRCLIB](https://lrclib.net/) and matches them to spotify's playback position. lyrics are rendered using ratatui, with cyan highlighting for the active line and smooth transitions between lines.
 
-versync communicates with spotify through the linux MPRIS interface using `playerctl`. it retrieves timestamped lyrics from [LRCLIB](https://lrclib.net/) and matches them to spotify's playback position. lyrics are rendered using ratatui, with cyan highlighting for the active line and smooth transitions between lines.
-
-## compatibility
-
-versync is designed for linux distributions with spotify MPRIS support, including Gentoo, Arch Linux, Fedora, Ubuntu, and Debian.
+COMPATIBILITY - versync is designed for linux distributions with spotify MPRIS support, including Gentoo, Arch Linux, Fedora, Ubuntu, and Debian.
 
 i made this project while using gentoo linux, but it should work on most distros.
 
